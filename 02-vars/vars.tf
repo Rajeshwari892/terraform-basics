@@ -28,3 +28,35 @@ variable "list-ex"{
             true
     ]
 }
+
+output "ex-list-op" {
+    value = "Welcome to ${var.ex-list[2]} Training and this contains  ${var.ex-list[0]} and the trainer name is  ${var.ex-list[5]}"
+}
+
+# Declaring a map variable 
+variable "ex-map" {
+     default = {
+        Class = "DevOps",
+        Duration = 85
+        Trainer  = "Verma", 
+        Batch    = "0600AM"
+     }
+}
+
+output "ex-map" {
+    value = "Welcome to ${var.ex-map["Class"]} Training and the duration of the training is ${var.ex-map["Duration"]} hours and the schedule time ${var.ex-map["Batch"]}  "
+}
+
+variable "City" {}
+
+output "city" {
+    value = "City name is ${var.City}"
+}
+
+# Declaring an empty variable 
+
+variable "State" {}
+
+output "state" {
+    value = var.State
+}
