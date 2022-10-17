@@ -62,7 +62,7 @@ output "city" {
 
 # Declaring an empty variable 
 
-variable "State" {}
+variable "State" {} # whenit is declared emptym looks for tfvars file for values, or take it from CLI
 
 output "state" {
     value = var.State
