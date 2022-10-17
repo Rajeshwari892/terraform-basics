@@ -20,3 +20,11 @@ variable "number" {
 output "number" {
     value = var.number  
 }
+
+variable "list-ex"{
+    defualt = [
+            "raji",
+            09,
+            true
+    ]
+}
