@@ -9,10 +9,11 @@ resource "aws_instance" "demo" {
   tags = {
     Name = "linux-terraform"
   }
+}
+
   output "public_ip" {
     value = aws_instance.demo.public_ip
   }
-}
 
 
 # Note:
