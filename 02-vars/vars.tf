@@ -67,3 +67,6 @@ variable "State" {}
 output "state" {
     value = var.State
 }
+
+
+# outputs are displayed in the alphabetic order of output names.
