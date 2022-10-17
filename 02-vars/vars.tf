@@ -22,15 +22,18 @@ output "number" {
 }
 
 variable "list-ex"{
-    defualt = [
+    default = [
             "raji",
             09,
-            true
+            true,
+            "AWS",
+            "DEvops",
+            "chinni"
     ]
 }
 
 output "ex-list-op" {
-    value = "Welcome to ${var.ex-list[2]} Training and this contains  ${var.ex-list[0]} and the trainer name is  ${var.ex-list[5]}"
+    value = "Welcome to ${var.list-ex[2]} Training and this contains  ${var.list-ex[0]} and the trainer name is  ${var.list-ex[5]}"
 }
 
 # Declaring a map variable 
