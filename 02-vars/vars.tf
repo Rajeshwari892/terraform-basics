@@ -70,3 +70,8 @@ output "state" {
 
 
 # outputs are displayed in the alphabetic order of output names.
+
+# cmd to execute when varfile exits; terraform apply -auto-approve -var-file=vars.tfvars
+# ; terraform apply -auto-approve -var-file=vars.tfvars -var State="karnataka"; it take karanataka as first priority value
+# from she; export TF_VAR_State=jammu 
+
