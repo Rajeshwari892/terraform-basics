@@ -1,5 +1,5 @@
 variable "test"{
-    value = "testing the output value"
+    default = "testing the output value"
 }
 
 output "sample" {
