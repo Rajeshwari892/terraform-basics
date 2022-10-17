@@ -6,6 +6,10 @@ output "sample" {
     value = var.test
 }
 
+variable "sample"{
+    default = "hello world"
+}
+
 output "sample-op1" {
     value = "Value is ${var.sample}"
 }
