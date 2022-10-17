@@ -19,8 +19,8 @@ resource "aws_instance" "demo" {
 # Note:
 # attach iam role to the instance om aws machine to authenticate to provide the infra
 
-resource "aws_security_group" "allow_ssh" {
-  name        = "allow_ssh"
+resource "aws_security_group" "allows_ssh" {
+  name        = "allows_ssh"
   description = "Allow ssh inbound traffic"
   
 
@@ -40,7 +40,7 @@ resource "aws_security_group" "allow_ssh" {
   }
 
   tags = {
-    Name = "allow_ssg_sg"
+    Name = "allows_ssg_sg"
   }
 }
 
